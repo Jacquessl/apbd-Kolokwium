@@ -100,7 +100,6 @@ public class BookRepository : IBookRepository
             
             if (res is null)
             {
-                Console.WriteLine(id);
                 return false;
             }
         }
