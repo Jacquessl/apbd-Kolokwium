@@ -31,7 +31,7 @@ public class BooksController : ControllerBase
     {
         if (!await _bookRepository.DoGenresExist(newBookDto))
         {
-            return NotFound("One of give genres doesn't exist");
+            return NotFound("One of given genres doesn't exist");
         }
 
         var id = await _bookRepository.AddNewBook(newBookDto);
