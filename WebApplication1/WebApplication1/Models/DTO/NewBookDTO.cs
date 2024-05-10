@@ -3,5 +3,5 @@
 public class NewBookDTO
 {
     public string Title { get; set; }
-    public List<int> GenreIds { get; set; } 
+    public HashSet<int> GenreIds { get; set; } 
 }
